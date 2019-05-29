@@ -1,0 +1,3 @@
+// nslookup 10.11.2.6 | grep name | awk '{print $4}'
+// with 10.11.2.6 the result of the last command
+e1r2p6.42.fr.

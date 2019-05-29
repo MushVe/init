@@ -1,0 +1,4 @@
+// traceroute slash16.org
+1st row: local ip adress
+2nd row: NAT router
+3rd row: public ip adress
