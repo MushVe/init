@@ -1,0 +1,2 @@
+// graphic : login with login and password when launching a new session.
+// ssh : use the "ssh <user>@<ip>" command and login with password.
