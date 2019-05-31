@@ -1,0 +1,41 @@
+#!/bin/bash
+PUNCH=""
+if [[ $1 = "run" ]]; then
+STR="Run to the hills!"
+PUNCH="Run for your life!"
+elif [[ $1 = "catarina" ]]; then
+STR="Hmm..."
+PUNCH="Quite a pickle indeed."
+elif [[ $1 = "world" ]]; then
+STR="Sekaaaaaaai de ichiban ohime samaaaa~"
+elif [[ $1 = "dna" ]]; then
+STR="Keep absolutely still."
+PUNCH="His vision is based on movement."
+elif [[ $1 = "scare" ]]; then
+STR="Peek a boo!"
+elif [[ $1 = "cheers" ]]; then
+STR="I think $USER is cute."
+PUNCH="Yeah, you are cute!"
+elif [[ $1 = "date" ]]; then
+Year=`date +%Y`
+Month=`date +%m`
+Day=`date +%d`
+Hour=`date +%H`
+Minute=`date +%M`
+Second=`date +%S`
+STR="We're the $Day/$Month/$Year and it's $Hour:$Minute:$Second."
+PUNCH="You're welcome."
+elif [[ $1 = "speak" ]]; then
+STR="Rawr!"
+elif [[ $1 = "list" ]]; then
+STR="run, catarina, world, dna, scare, cheers, date, speak"
+else
+STR="Hi!"
+fi
+
+echo -e ""
+echo -e "                        ..  "
+echo -e "                      / __)  ${STR}"
+echo -e "               .-^^^-/ /  "
+echo -e "            __/       /   ${PUNCH}"
+echo -e "           <__.|_|-|_|  \n"
